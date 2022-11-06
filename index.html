@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YonArias</title>
+    <link rel="stylesheet" href="./style-main.css">
+    <link rel="stylesheet" href="./style-responsive.css">
+    <style>
+      .main-container {
+        display: grid;
+        grid-template-rows: 1fr 4fr;
+      }
+      .main-head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+      }
+      .main-head h2 {
+        font-size: 2.8em;
+      }
+      .main-head p {
+        margin-top: 10px;
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+      }
+      .main-body {
+        display: grid;
+        gap: 15px;
+      }
+      .main-body a {
+        background-color: var(--white-fuerte);
+        border-radius: 10px;
+        padding: 20px;
+        text-decoration: none;
+        color: black;
+        font-size: 1.8em;
+        text-align: center;
+        font-weight: bold;
+      }
+      .item2 {
+        background-image: url("./src/opcion1.jpg");
+        background-size: cover;
+      }
+      .item3 {
+        background-image: url("./src/opcion2.jpg");
+        background-size: cover;
+      }
+      .item4 {
+        background-image: url("./src/opcion3.jpg");
+        background-size: cover;
+      }
+    </style>
+</head>
+<body>
+    <div class="container-base">
+        <div class="main-container">
+            <div class="main-head">
+                <h2>Metodos de EOQ</h2>
+                <p>Presentamos la calculadora de las variaciones del METODO EOQ</p>
+            </div>
+            <div class="main-body">
+                <!--<a href="" class="item item1">Modelo de Tamaño de lote de producción económica</a>-->
+                <a href="./tamlote.html" class="item item2"></a>
+                <a href="./opcion2.html" class="item item3"></a>
+                <a href="./opcion3.html" class="item item4"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

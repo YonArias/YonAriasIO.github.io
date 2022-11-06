@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lote produccion</title>
+    <link rel="stylesheet" href="./style-main.css">
+    <link rel="stylesheet" href="./style-responsive.css">
+</head>
+<body>
+    <div class="container-base">
+        <div class="main-container">
+            <div class="main-head-meto">
+                <a href="./index.html"><img src="./src/flecha-izquierda.png" alt="retro" class="retro"></a>
+                <div class="title">
+                    <p>Modelo de tamaño del lote de producción económica</p>
+                </div>
+            </div>
+            <div class="main-body-meto">
+                <form action="input" class="form-input form">
+                    <label for="demanda">Producción anual</label>
+                    <input type="number" id="produccion">
+                    <label for="demanda">Demanda anual</label>
+                    <input type="number" id="demanda">
+                    <label for="demanda">Costo de preparación</label>
+                    <input type="number" id="costoP">
+                    <label for="demanda">Costo de retención</label>
+                    <input type="number" id="costoR">
+                    <label for="demanda">Lote produccion</label>
+                    <input type="number" id="Lproduccion">
+                </form>
+                <input type="button" value="Calcular" id="button" onclick="calcularOpcion1();">
+                <form action="output" class="form-output form">
+                    <h2>Resultado</h2>
+                    <label for="demanda">Tamaño optimo de producción</label>
+                    <input type="text" id="loteO" readonly>
+                    <label for="demanda">Fase por año</label>
+                    <input type="text" id="fase" readonly>
+                    <label for="demanda">Tiempo ciclo</label>
+                    <input type="text" id="time" readonly>
+                    <label for="demanda">Costo total</label>
+                    <input type="text" id="costoT" readonly>
+                    <label for="demanda">Costo total con lote produccion</label>
+                    <input type="text" id="costoTlote" readonly>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./codigo.js"></script>
+</body>
+</html>

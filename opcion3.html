@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuento por cantidad</title>
+    <link rel="stylesheet" href="./style-main.css">
+    <link rel="stylesheet" href="./style-responsive.css">
+    <style>
+        .new {
+            display: flex;
+            margin: 10px 0;
+        }
+        .new input {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-base">
+        <div class="main-container">
+            <div class="main-head-meto">
+                <a href="./index.html"><img src="./src/flecha-izquierda.png" alt="retro" class="retro"></a>
+                <div class="title">
+                    <p>Descuentos por cantidad en el modelo EOQ</p>
+                </div>
+            </div>
+            <div class="main-body-meto">
+                <form action="input" class="form-input form">
+                    <label for="demanda">Demanda anual</label>
+                    <input type="number" id="demanda">
+                    <label for="pedido">Orden de pedido</label>
+                    <input type="number" id="pedido">
+                    <label for="almacenamiento">Costo de almacenamiento (tasa)</label>
+                    <input type="number" id="costoA">
+                    <div class="new">
+                        <label for="min">Desde</label>
+                        <input type="number" id="min">
+                        <label for="max">Hasta</label>
+                        <input type="number" id="max">
+                    </div>
+                    <label for="costol">Costo segun tamaño de lote</label>
+                    <input type="number" id="costoL">
+                </form>
+                <input type="button" value="Calcular" id="button" onclick="calcularOpcion3()">
+                <form action="output" class="form-output form">
+                    <h2>Resultado</h2>
+                    <label for="demanda">Tamaño optimo de lote</label>
+                    <input type="text" id="loteO">
+                    <label for="demanda">Costo total anual</label>
+                    <input type="text" id="costoTotal">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./codigo.js"></script>
+</body>
+</html>

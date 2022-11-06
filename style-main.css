@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --black-suave: #212121;
+    --white-fuerte: #efefef;
+    --white-suave: #dedede;
+    --letra-red: #be2d2d;
+}
+body {
+    font-family: monospace;
+}
+.container-base {
+    background-color: var(--white-fuerte);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container {
+    background-color: var(--white-suave);
+    width: 90vw;
+    height: 95vh;
+    border-radius: 10px;
+    padding: 30px;
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+}
+/* Paginas de metodos*/
+.main-head-meto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title p {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+.main-body-meto {
+    margin-top: 40px;
+    display: grid;
+    grid-template-rows: 4fr 1fr 5fr;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    align-items: center;
+}
+.form-input label {
+    margin-bottom: 10px;
+    color: var(--letra-red);
+}
+.form-input input {
+    margin-bottom: 5px;
+    background-color: var(--white-suave);
+    border: 0;
+    border-bottom: 1px solid black;
+    width: 50%;
+    text-align: center;
+}
+#button {
+    margin: 10px 0;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    font-weight: bold;
+}
+.form-output {
+    background-color: var(--black-suave);
+    padding: 20px 40px;
+    border-radius: 20px;
+}
+.form-output label {
+    color: var(--white-fuerte);
+    margin-bottom: 5px;
+    text-align: center;
+}
+.form-output input {
+    background-color: var(--black-suave);
+    border: 0;
+    border-bottom: 1px solid var(--white-suave);
+    margin-bottom: 5px;
+    color: aqua;
+    text-align: center;
+    width: 50%;
+}
+.form-output h2 {
+    color: var(--white-suave);
+    margin-bottom: 20px;
+}
