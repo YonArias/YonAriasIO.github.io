@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantidad de pedido</title>
+    <link rel="stylesheet" href="./style-main.css">
+    <link rel="stylesheet" href="./style-responsive.css">
+    
+</head>
+<body>
+    <div class="container-base">
+        <div class="main-container">
+            <div class="main-head-meto">
+                <a href="./index.html"><img src="./src/flecha-izquierda.png" alt="retro" class="retro"></a>
+                <div class="title">
+                    <p>Cantidad de pedido, Modelo de punto de reorden con demanda probalistica</p>
+                </div>
+            </div>
+            <div class="main-body-meto">
+                <form action="input" class="form-input form">
+                    <label for="demanda">Demanda anual</label>
+                    <input type="number" id="demanda">
+                    <label for="producto">Costo de producto</label>
+                    <input type="number" id="producto">
+                    <label for="pedido">Costo de pedido</label>
+                    <input type="number" id="pedido">
+                    <label for="almacenamiento">Costo de almacenamiento (tasa)</label>
+                    <input type="number" id="costoA">
+                    <label for="espera">Tiempo de espera</label>
+                    <input type="number" id="Tespera">
+                    <label for="media">Media</label>
+                    <input type="number" id="media">
+                    <label for="desviacion">Desviación estándar</label>
+                    <input type="number" id="desviacion">
+                    <label for="laborable">Dias laborables</label>
+                    <input type="number" id="laborable">
+                </form>
+                <input type="button" value="Calcular" id="button" onclick="calcularOpcion4()">
+                <form action="output" class="form-output form">
+                    <h2>Resultado</h2>
+                    <label for="q">Cantidad económica por pedido(Q)</label>
+                    <input type="text" id="q">
+                    <label for="n">Cantidad de pedidos anual (N)</label>
+                    <input type="text" id="n">
+                    <label for="t">Tiempo de ciclo (T)</label>
+                    <input type="text" id="t">
+                    <label for="r">Punto de reorden (r)</label>
+                    <input type="text" id="r">
+                    <label for="security">Existencia de seguridad</label>
+                    <input type="text" id="security">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./codigo.js"></script>
+</body>
+</html>
