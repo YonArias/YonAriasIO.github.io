@@ -1,6 +1,7 @@
 @media only screen and (min-width: 620px) {
     .main-container {
         width: 600px;
+        height: 900px;
     }
     .item2 {
         background-image: url("./src/opcion1_responsive.jpg");

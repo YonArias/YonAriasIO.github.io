@@ -9,13 +9,12 @@
 }
 body {
     font-family: monospace;
+    width: 100vw;
+    height: 100vh;
 }
 .main-header {
     text-align: center;
     justify-content: center;
-}
-.main-header h2{
-    text-align: center;
 }
 .container-base {
     background-color: var(--white-fuerte);
@@ -48,8 +47,9 @@ body {
 }
 .main-body-meto {
     margin-top: 40px;
-    display: grid;
-    grid-template-rows: 4fr 1fr 5fr;
+    display: flex;
+    flex-direction: column;
+
 }
 .form{
     display: flex;

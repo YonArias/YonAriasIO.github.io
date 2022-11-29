@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>revision periodica</title>
+    <link rel="stylesheet" href="./style-main.css">
+    <link rel="stylesheet" href="./style-responsive.css">
+    
+</head>
+<body>
+    <div class="container-base">
+        <div class="main-container">
+            <div class="main-head-meto">
+                <a href="./index.html"><img src="./src/flecha-izquierda.png" alt="retro" class="retro"></a>
+                <div class="title">
+                    <p>Modelo de revisión periódica con demanda probalistica</p>
+                </div>
+            </div>
+            <div class="main-body-meto">
+                <form action="input" class="form-input form">
+                    <label for="demanda">Demanda unitaria</label>
+                    <input type="number" id="demanda">
+                    <label for="desviacion">Desviación estándar</label>
+                    <input type="number" id="desviacion">
+                    <label for="revision">Revición de inventario</label>
+                    <input type="number" id="revision">
+                    <label for="entrega">Tiempo de entrega</label>
+                    <input type="number" id="entrega">
+                    <label for="z">Valor de Z en porcentaje (98%)</label>
+                    <input type="number" id="z">
+                    <label for="inicial">Inventario inicial</label>
+                    <input type="number" id="inicial">
+                </form>
+                <input type="button" value="Calcular" id="button" onclick="calcularOpcion5()">
+                <form action="output" class="form-output form">
+                    <h2>Resultado</h2>
+                    <label for="des">desviacion de T + L</label>
+                    <input type="text" id="des">
+                    <label for="q">Unidades de pedido de revisión (Q)</label>
+                    <input type="text" id="q">
+                    <label for="s">Stock de seguridad</label>
+                    <input type="text" id="s">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./codigo.js"></script>
+</body>
+</html>
